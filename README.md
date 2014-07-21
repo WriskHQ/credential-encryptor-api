@@ -1,4 +1,4 @@
-password-encryptor-api
-======================
+credential-encryptor-api
+========================
 
-API for password encryption and password matching.
+API for credential encryption and matching.

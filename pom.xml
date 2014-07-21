@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    This file is part of Everit - Password Encryptor API.
+    This file is part of Everit - Credential Encryptor API.
 
-    Everit - Password Encryptor API is free software: you can redistribute it and/or modify
+    Everit - Credential Encryptor API is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Everit - Password Encryptor API is distributed in the hope that it will be useful,
+    Everit - Credential Encryptor API is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Lesser General Public License for more details.
 
     You should have received a copy of the GNU Lesser General Public License
-    along with Everit - Password Encryptor API.  If not, see <http://www.gnu.org/licenses/>.
+    along with Everit - Credential Encryptor API.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -29,16 +29,16 @@
   </parent>
 
   <groupId>org.everit.osgi</groupId>
-  <artifactId>org.everit.osgi.password.encryptor.api</artifactId>
+  <artifactId>org.everit.osgi.credential.encryptor.api</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
   <packaging>bundle</packaging>
 
-  <name>Everit - Password Encryptor API</name>
-  <description>Password Encryptor API</description>
+  <name>Everit - Credential Encryptor API</name>
+  <description>Credential Encryptor API</description>
 
   <properties>
-    <projectpath>password-encryptor-api</projectpath>
+    <projectpath>credential-encryptor-api</projectpath>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
@@ -88,7 +88,7 @@
               *
             </Import-Package>
             <Export-Package>
-              org.everit.osgi.password.encryptor
+              org.everit.osgi.credential.encryptor
             </Export-Package>
           </instructions>
         </configuration>
