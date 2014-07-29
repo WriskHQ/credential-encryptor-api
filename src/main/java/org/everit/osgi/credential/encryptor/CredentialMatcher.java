@@ -17,17 +17,20 @@
 package org.everit.osgi.credential.encryptor;
 
 /**
- * Common interface for credential encryption.
+ * Common interface for credential verification.
  */
-public interface CredentialEncryptor {
+public interface CredentialMatcher {
 
     /**
-     * Encrypts a credential.
+     * Checks a plain credential against an encrypted one.
      *
      * @param plainCredential
-     *            The credential to be encrypted. Cannot be <code>null</code>.
-     * @return the resulting digest. Cannot be <code>null</code>.
+     *            The plain credential to check.
+     * @param encryptedCredential
+     *            The encrypted credential against which to check the credential.
+     * @return <code>true</code> if the credential matches, <code>false</code> if the credential does not match or if
+     *         one of the parameters is <code>null</code>.
      */
-    String encrypt(final String plainCredential);
+    boolean match(String plainCredential, String encryptedCredential);
 
 }
